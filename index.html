@@ -34,7 +34,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body id="page-top">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -93,94 +92,122 @@
             </div>
         </div>
     </header>
-
-    <section id="download" class="download bg-primary text-center">
+    <script type="text/javascript">
+        $(".btn").mouseup(function(){
+            $(this).blur();
+        })
+    </script>
+    <section id="signup" class="email bg-primary text-center"> 
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">Discover what all the buzz is about!</h2>
-                    <p>Our app will be availabe really soon! Sign up now to recieve the beta soon!</p>
-                    <div class="badges">
-                        <!-- <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a> -->
-                        <iframe id="the-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSfFclylulnbQ3hTEEBRQEbZubWasWvlzMWKfm2vdUhgGLysog/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                        <script>
-                        setTimeout(function(){
-                          var iframe = document.getElementById('the-iframe');
-                          var style = document.createElement('style');
-                          style.textContent =
-                             '.freebirdFormviewerViewFormBanner{' +
-                                'height: 126px;!'+
-                              '}'
-                          ;
-                          iframe.contentDocument.head.appendChild(style);
-                        }, 4000);
-
-
-                        </script>
-                    </div>
+                <form id="gform" method="POST" class="pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbzrGDvL1LCYfdAsfA2UFtgstepEhLUT650xgSWBogg5L81140A/exec">
+                <div class="col-md-3 vcenter">
+                    <p class="signuptext">Sign up now to get early access to the app</p>
+                </div>
+                <div class="col-md-8 vcenter">
+                    <input type="email" name="email" type="email" class="form-control" placeholder="Enter email">
+                </div>
+                <div class="col-md-1 vcenter">
+                    <!-- <a href="#" role="button" class="btn btn-default">Sign Up</a>. -->
+                    <input class="btn btn-default" type="submit" value="Sign Up"></form>
+                </div>
+                <div style="display:none;" id="thankyou_message2">
+                    <p class="signuptext"><em>Thanks</em> for signing up!   We will get back to you soon!</p>
                 </div>
             </div>
         </div>
     </section>
-
-
-<!-- 
-<section id="tryit" class="tryit bg-teritary text-center">
-   <div class="container">
-     <div class="row">
-     <div class="col-md-8 col-md-offset-2">
-        <h2 class="section-heading">Try It Out!</h2>
-        <div class="form-group">
-          <label for="comment">Input your text here:</label>
-          <textarea id="rawtextinput" class="form-control" rows="15" id="comment"></textarea>
-        </div>
-        <button type="button" id="submit" class="btn btn-primary">Submit!</button>
-     </div>
-     <div class="col-md-8 col-md-offset-2">
-        <div class="QuizResults">
-            <img class="Loading"src="img/squares.svg" alt="Loading...">    
-            <div class="quiz_cell" style="height: 100%; color: black;background-color: white; margin: 1em; border-radius: 5px; padding: 0.5em;">
-            <p id="quiz_result">Question 1: Although ______ can be seen in many different textures and sizes, typically a leaf is a thin, dorsiventrally flattened organ, borne above ground and specialized for photosynthesis.</p>
+    <section id="features">
+        <section id="feature1" class="feature">
+            <div class="feature-container container">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5 pull-left">
+                           <h3>Instant <b>snap.</b><br>And Questo will handle the rest.</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                       <div class="col-md-5 pull-left">
+                           <p>Questo’s advanced natural language processing algorithm generates quizzes based on the contents of the textbook you scanned.</p>
+                       </div>
+                    </div>   
+                </div>
             </div>
-
-            <div class="quiz_cell" style="height: 4em; background-color: white; margin: 1em;">
-
+        </section>
+        <section id="feature2" class="feature">
+            <div class="feature-container container">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5 pull-right">
+                           <h3><b>Personalised</b> Learning</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                       <div class="col-md-5 pull-right">
+                           <p>With questo, revising beomes much simpler. Scan a part of your textbook that you need to revise, and it’ll automatically generate quizzes based on it. Teachers are redundant!</p>
+                       </div>
+                    </div>
+                </div>   
             </div>
-
-            <div class="quiz_cell" style="height: 4em; background-color: white; margin: 1em;">
-
+        </section>
+        <section id="feature3" class="feature">
+           <div class="feature-container container">
+            <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5 pull-left">
+                           <h3><b>Discover</b> related quizzes</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                       <div class="col-md-5 pull-left">
+                           <p>Quizzes are not limited to the textbooks you have. Questo automatically suggests new quizzes for you which the other users have generated. Sweet!</p>
+                       </div>
+                    </div>
+                </div>   
             </div>
-
-            <div class="quiz_cell" style="height: 4em; background-color: white; margin: 1em;">
-
-            </div>
-     </div>
-     </div>
-          <div class="col-md-8 col-md-offset-2">
-
-     </div>
-     </div>
+        </section>
+    </section> 
+        <section id="signup" class="email bg-primary text-center"> 
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-12 vcenter">
+                      <p class="signuptext bottomsignuptext">Experience the future.</br>Sign up now.</p>
+                   </div>
+                   <div class="col-md-8 hcenter">
+                       <form id="gform2" method="POST" class="pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbzrGDvL1LCYfdAsfA2UFtgstepEhLUT650xgSWBogg5L81140A/exec"><input type="email" name="email" type="email" class="form-control" placeholder="Enter email">
+                   </div>
+                   <div class="col-md-4"></br></br></div>
+                   <div class="col-md-2">
+                       <!-- <a href="#" role="button" class="btn btn-default">Sign Up</a>. -->
+                       <input class="btn btn-default nospace pull-left" type="submit" value="Sign Up"></form>
+                   </div>
+                   <div style="display:none;" id="thankyou_message">
+                       <p class="signuptext"><em>Thanks</em> for signing up!   We will get back to you soon!</p>
+                   </div>
+               </div>
+           </div>
+       </section>
+    
+   <section id="feedback">
+   <div class="container nopadding">
+    <div class="col-md-8 vcenter">
+        <p class="signuptext feedbackTitle">Have Feedback For Us?</p>
+       <p>Questo is currently still doing its beta testing. Your feedback and usage helps us greatly in improving our service and our algorithms! We would love to hear from you if you have any feedback about our application and service! Drop us an email at team@getquesto.com!</p>
+    </div>
    </div>
-</section> -->
-
-    <section id="contact" class="contact bg-secondary">
+   </section>
+   <footer>  
         <div class="container">
-            <h2>We <i class="fa fa-heart"></i> new friends!</h2>
-            <ul class="list-inline list-social">
-                <li class="social-facebook">
-                    <a href="https://www.facebook.com/thequestoapp/"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li class="social-google-plus">
-                    <a href="https://www.instagram.com/questohq/"><i class="fa fa-instagram"></i></a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2016 Taichi Kato. All Rights Reserved.</p>
-            <ul class="list-inline">
+          <ul class="list-inline list-social pull-left">
+                 <li class="social-facebook">
+                     <a href="https://www.facebook.com/thequestoapp/"><i class="fa fa-facebook"></i></a>
+                 </li>
+                 <li class="social-google-plus">
+                     <a href="https://www.instagram.com/questohq/"><i class="fa fa-instagram"></i></a>
+                 </li>
+             </ul><br>
+            <p class="pull-left">&copy; 2016 Taichi Kato. All Rights Reserved.</p>
+            <ul class="list-inline pull-right">
                 <li>
                     <a href="privacy.html">Privacy</a>
                 </li>
@@ -206,7 +233,158 @@
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
     <script src="js/post.js"></script>
+<script type="text/javascript">
+ 
+
+function validEmail(email) { // see:
+  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+  return re.test(email);
+}
+// get all data in form and return object
+function getFormData() {
+  var elements = document.getElementById("gform").elements; // all form elements
+  var fields = Object.keys(elements).map(function(k) {
+    if(elements[k].name !== undefined) {
+      return elements[k].name;
+    // special case for Edge's html collection
+    }else if(elements[k].length > 0){
+      return elements[k].item(0).name;
+    }
+  }).filter(function(item, pos, self) {
+    return self.indexOf(item) == pos && item;
+  });
+  var data = {};
+  fields.forEach(function(k){
+    data[k] = elements[k].value;
+    var str = ""; // declare empty string outside of loop to allow
+                  // it to be appended to for each item in the loop
+    if(elements[k].type === "checkbox"){ // special case for Edge's html collection
+      str = str + elements[k].checked + ", "; // take the string and append 
+                                              // the current checked value to 
+                                              // the end of it, along with 
+                                              // a comma and a space
+      data[k] = str.slice(0, -2); // remove the last comma and space 
+                                  // from the  string to make the output 
+                                  // prettier in the spreadsheet
+    }else if(elements[k].length){
+      for(var i = 0; i < elements[k].length; i++){
+        if(elements[k].item(i).checked){
+          str = str + elements[k].item(i).value + ", "; // same as above
+          data[k] = str.slice(0, -2);
+        }
+      }
+    }
+  });
+  console.log(data);
+  return data;
+}
+function getFormData2() {
+  var elements = document.getElementById("gform2").elements; // all form elements
+  var fields = Object.keys(elements).map(function(k) {
+    if(elements[k].name !== undefined) {
+      return elements[k].name;
+    // special case for Edge's html collection
+    }else if(elements[k].length > 0){
+      return elements[k].item(0).name;
+    }
+  }).filter(function(item, pos, self) {
+    return self.indexOf(item) == pos && item;
+  });
+  var data = {};
+  fields.forEach(function(k){
+    data[k] = elements[k].value;
+    var str = ""; // declare empty string outside of loop to allow
+                  // it to be appended to for each item in the loop
+    if(elements[k].type === "checkbox"){ // special case for Edge's html collection
+      str = str + elements[k].checked + ", "; // take the string and append 
+                                              // the current checked value to 
+                                              // the end of it, along with 
+                                              // a comma and a space
+      data[k] = str.slice(0, -2); // remove the last comma and space 
+                                  // from the  string to make the output 
+                                  // prettier in the spreadsheet
+    }else if(elements[k].length){
+      for(var i = 0; i < elements[k].length; i++){
+        if(elements[k].item(i).checked){
+          str = str + elements[k].item(i).value + ", "; // same as above
+          data[k] = str.slice(0, -2);
+        }
+      }
+    }
+  });
+  console.log(data);
+  return data;
+}
+
+function handleFormSubmit(event) {  // handles form submit withtout any jquery
+  event.preventDefault();           // we are submitting via xhr below
+  var data = getFormData();         // get the values submitted in the form
+  if( !validEmail(data.email) ) {   // if email is not valid show error
+    document.getElementById('email-invalid').style.display = 'block';
+    return false;
+  } else {
+    var url = event.target.action;  //
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    // xhr.withCredentials = true;
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = function() {
+        console.log( xhr.status, xhr.statusText )
+        console.log(xhr.responseText);
+        document.getElementById('gform').style.display = 'none'; // hide form
+        document.getElementById('thankyou_message').style.display = 'block';
+        return;
+    };
+    // url encode form data for sending as post data
+    var encoded = Object.keys(data).map(function(k) {
+        return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
+    }).join('&')
+    xhr.send(encoded);
+  }
+}
+function handleFormSubmit2(event) {  // handles form submit withtout any jquery
+  event.preventDefault();           // we are submitting via xhr below
+  var data = getFormData2();         // get the values submitted in the form
+  if( !validEmail(data.email) ) {   // if email is not valid show error
+    document.getElementById('email-invalid').style.display = 'block';
+    return false;
+  } else {
+    var url = event.target.action;  //
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    // xhr.withCredentials = true;
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = function() {
+        console.log( xhr.status, xhr.statusText )
+        console.log(xhr.responseText);
+        document.getElementById('gform2').style.display = 'none'; // hide form
+        document.getElementById('thankyou_message2').style.display = 'block';
+        return;
+    };
+    // url encode form data for sending as post data
+    var encoded = Object.keys(data).map(function(k) {
+        return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
+    }).join('&')
+    xhr.send(encoded);
+  }
+}
+function loaded() {
+  console.log('contact form submission handler loaded successfully');
+  // bind to the submit event of our form
+  var form = document.getElementById('gform');
+  form.addEventListener("submit", handleFormSubmit, false);
+  var form2 = document.getElementById('gform2');
+  form2.addEventListener("submit", handleFormSubmit2, false);
+};
+document.addEventListener('DOMContentLoaded', loaded, false);
+
+</script>
 
 </body>
 
 </html>
+
+
+
+
+

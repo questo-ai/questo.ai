@@ -1,11 +1,11 @@
 .heading-font {
   font-family: 'Avenir Next', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 .body-font {
   line-height: 1.4;
-  font-weight: 200;
+  font-weight: 400;
   font-family: 'Avenir Next', 'Helvetica', 'Arial', 'sans-serif';
 }
 .alt-font {
@@ -21,7 +21,7 @@ body {
 }
 body {
   line-height: 1.4;
-  font-weight: 200;
+  font-weight: 400;
   font-family: 'Avenir Next', 'Helvetica', 'Arial', 'sans-serif';
 }
 a {
@@ -55,12 +55,14 @@ h5,
 h6 {
   line-height: 1.4;
   font-weight: 200;
-  font-family: 'Avenir Next', 'Helvetica', 'Arial', 'sans-serif';
+  color: #95989A;
+  font-family: 'Helvetica Nue', 'Helvetica', 'Arial', 'sans-serif';
 }
 p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
+  color: #95989A;
 }
 .navbar-default {
   background-color: white;
@@ -223,7 +225,8 @@ header .device-container .screen img {
   .device {
     width: 25vh !important;
     height: 50vh !important;
-    min-height: 100px;
+    min-height: 400px;
+    min-width:200px;
   }
   .deveice-container {
     margin: 20vh 0;
@@ -255,6 +258,9 @@ section.download .badges .badge-link:last-child {
 }
 section.download .badges .badge-link img {
   height: 60px;
+}
+section.feature {
+  padding: 10px 0;
 }
 @media (min-width: 768px) {
   section.download .badges .badge-link {
@@ -388,10 +394,15 @@ section.contact ul.list-social li.social-google-plus a {
 section.contact ul.list-social li.social-google-plus a:hover {
   background-color: #d73925;
 }
+section.email {
+  padding: 40px;
+  background-color: #EEE
+}
+
 footer {
-  background-color: #222222;
+  background-color: white;
   padding: 25px 0;
-  color: rgba(255, 255, 255, 0.3);
+  color: #95989A;
   text-align: center;
 }
 footer p {
@@ -403,7 +414,7 @@ footer ul {
 }
 footer ul li a {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.3);
+  color: #95989A;
 }
 footer ul li a:hover,
 footer ul li a:focus,
@@ -428,6 +439,10 @@ footer ul li a.active {
   padding-right: 0;
   padding-left: 0;
 }
+input:focus {
+    outline:none;
+    box-shadow:none;
+}
 .btn-outline {
   color: white;
   border-color: white;
@@ -438,24 +453,79 @@ footer ul li a.active {
 .btn-outline:active,
 .btn-outline.active {
   color: white;
-  background-color: #205391;
-  border-color: #205391;
+  background-color: rgba(0,0,0,0);
+  border-width: 2;
 }
 .btn {
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   text-transform: uppercase;
   letter-spacing: 2px;
-  border-radius: 300px;
+  border-radius: 0px;
+  color: #444;
+  background-color: #FFF;
+  border-color: #444;
+  margin: 10px;
+}
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active {
+  outline:none;   
+  box-shadow:none;
+  color: #FFF
+  background-color:  #444;
 }
 .form-control {
-  background-color: #FFF;
   transition: background-color 0.5s ease;
   resize: none;
-  border: 0;
+  border: 1px solid #444;
+  border-radius: 0px;
+  outline:none;
+  box-shadow:none;
+  background-color: #FFF;
 }
-.form-control:hover {
-  background-color: #e8ffff;
+.form-control:hover,
+.form-control:focus,
+.form-control:active,
+.form-control.active  {
+  /*background-color: #e8ffff;*/
+  outline:none;
+  box-shadow:none;
   transition: background-color 0.5s ease;
+}
+
+.signuptext {
+  color: #444;
+  text-align: left;
+  font-size: 25px;
+  font-family: 'Avenir Next', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 500;
+}
+.bottomsignuptext {
+  font-size: 40px;
+}
+.feedbackTitle {
+  font-size: 36;
+  color: #95989A;
+}
+.nospace {
+  margin-left:0;
+  }
+.nopadding{
+  padding: 0
+}
+.feature-container {
+  padding: 20px 0;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    margin-right: -4px;
+}
+.hcenter {
+    float: left;
+    margin-right: -4px;
 }
 button:focus {
   outline: 0 !important;
