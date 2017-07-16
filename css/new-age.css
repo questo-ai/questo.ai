@@ -48,7 +48,7 @@ h2 {
   font-family: 'Avenir Next', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 300;
   letter-spacing: 1px;
-  color: #418fde;
+  color: #1a62af;
 }
 h3,
 h4,
@@ -303,10 +303,13 @@ section.features .feature-item {
 section.features .feature-item h3 {
   font-size: 30px;
 }
+.device {
+  margin: 0 auto;
+}
 #signupbutton {
   margin: 6px;
   padding: 11px 40px;
-  background: #418fde;
+  background: #1a62af;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -466,7 +469,7 @@ input:focus {
   letter-spacing: 2px;
   border-radius: 0px;
   margin: 10px;
-  background: #418fde;
+  background: #1a62af;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -527,6 +530,9 @@ input:focus {
     vertical-align: middle;
     float: none;
     margin-right: -4px;
+}
+.right-feature {
+  text-align: right
 }
 .hcenter {
     float: left;
