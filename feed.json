@@ -1,0 +1,90 @@
+{  
+   "status":0,
+   "quizList":{  
+      "1":{  
+         "title":"Biology B2 Plants: Photosynthesis",
+         "type":"mcq",
+         "questions":{  
+
+         },
+         "quizID":"24429613016573964205756171878084608314",
+         "upvotes":30,
+         "timestamp":"2017-06-14 15:25:11",
+         "downvotes":0,
+         "numberOfQuestions":5,
+         "category":"Biology",
+         "date":"2017-06-04",
+         "userID":"0961549251874115",
+         "fullName": "Taichi Kato",
+         "imageURL": "https://yt3.ggpht.com/-oIQNklNuRyM/AAAAAAAAAAI/AAAAAAAAAAA/i5zylG1__LQ/s900-c-k-no-mo-rj-c0xffffff/photo.jpg"
+      },
+    "2":{  
+         "title":"Germany Hitler: Shultz Staffel",
+         "type":"mcq",
+         "questions":{  
+
+         },
+         "quizID":"90528014243315669869543445505502280775",
+         "upvotes":12,
+         "timestamp":"2017-05-09 12:25:11",
+         "downvotes":0,
+         "numberOfQuestions":12,
+         "category":"History",
+         "date":"2017-06-12",
+         "userID":"0961549251874115",
+         "fullName": "Arya Vohra",
+         "imageURL": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAfGAAAAJDgzOWUzOWY5LTlkODctNDZlNS05Zjk1LTQyN2MxNDI5Mzk4Yg.jpg"
+      },
+      "3":{  
+         "title":"Demand And Supply Unit Test",
+         "type":"mcq",
+         "questions":{  
+
+         },
+         "quizID":"90528014243315669869543445505502280775",
+         "upvotes":6,
+         "timestamp":"2017-06-09 12:25:11",
+         "downvotes":0,
+         "numberOfQuestions":10,
+         "category":"Economics",
+         "date":"2017-05-09",
+         "userID":"0961549251874115",
+         "fullName": "Khush Jammu",
+         "imageURL": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAhSAAAAJDNmNTNkMTI4LWM1YzQtNDg3OC04MGY5LWU0YmY4ZGI1M2UzOQ.jpg"
+      },
+      "4":{  
+         "title":"CS101 Java terminology",
+         "type":"mcq",
+         "questions":{  
+
+         },
+         "quizID":"90528014243315669869543445505502280775",
+         "upvotes":12,
+         "timestamp":"2017-05-30 12:25:11",
+         "downvotes":0,
+         "numberOfQuestions":12,
+         "category":"Computer Science",
+         "date":"2017-06-02",
+         "userID":"0961549251874115",
+         "fullName": "Karina Walker",
+         "imageURL": "https://scontent.fsin1-1.fna.fbcdn.net/v/t1.0-1/c0.6.100.100/p100x100/15170932_358467024500020_3941491986525086419_n.jpg?oh=b831ec9f26d7e08ced0c8b377f06833c&oe=59CE599B"
+      },
+      "5":{  
+         "title":"Russia: The fall of Tsars",
+         "type":"mcq",
+         "questions":{  
+
+         },
+         "quizID":"90528014243315669869543445505502280775",
+         "upvotes":23,
+         "timestamp":"2017-05-09 12:25:11",
+         "downvotes":0,
+         "numberOfQuestions":12,
+         "category":"History",
+         "date":"2017-05-09",
+         "userID":"0961549251874115",
+         "fullName": "Adi Mehta",
+         "imageURL": "https://scontent.fsin1-1.fna.fbcdn.net/v/t1.0-1/c0.0.160.160/p160x160/10628501_932332253463505_4101134106802149435_n.jpg?oh=840669fd8b6ed43be992180d1441887f&oe=59CE978D"
+      }
+   }
+}
