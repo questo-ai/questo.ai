@@ -644,7 +644,7 @@ p {
   font-weight: 400;
   text-align: center;
   letter-spacing: 0.05em;
-  text-transform: lowercase;
+  text-transform: none;
 }
 
 .paragraph-2 {
@@ -747,7 +747,7 @@ p {
   margin-bottom: 10px;
   padding-top: auto;
   padding-bottom: auto;
-  float: right;
+  float: left;
   clear: none;
   border-radius: 5px;
   background-color: #0a91fc;
@@ -762,12 +762,13 @@ p {
 
 .text-block-2 {
   display: block;
+  margin-left: 5px;
   float: left;
   font-family: Lato, sans-serif;
   color: #5a5a5a;
-  font-size: 1.2em;
-  line-height: 3.1em;
-  font-weight: 900;
+  font-size: 1em;
+  line-height: 4em;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
@@ -1019,6 +1020,8 @@ p {
 }
 
 .heading-7 {
+  margin-right: 4em;
+  margin-left: 4em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border-top: 1px dashed #0a91fc;
@@ -1039,6 +1042,104 @@ p {
   font-family: Lato, sans-serif;
   color: #6b6b6b;
   text-align: center;
+}
+
+.paragraph-8 {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-family: Lato, sans-serif;
+  color: #616161;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.paragraph-8.heh {
+  margin-top: 0em;
+  font-size: 1em;
+  text-align: left;
+  letter-spacing: 0.02em;
+}
+
+.button-5 {
+  display: block;
+  width: 20%;
+  margin: 4em auto;
+  text-align: center;
+}
+
+.button-5:hover {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  color: #fff;
+}
+
+.section-5 {
+  padding-top: 5em;
+  background-color: #fff;
+}
+
+.section-6 {
+  margin-top: 5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.rich-text-block {
+  font-family: Lato, sans-serif;
+}
+
+.html-embed-2 {
+  font-family: Lato, sans-serif;
+}
+
+.recruitment-job-title {
+  font-family: Lato, sans-serif;
+  font-size: 1.5em;
+}
+
+.row-3 {
+  font-family: Lato, sans-serif;
+}
+
+.unordered-list {
+  margin-left: 2em;
+}
+
+.column-7 {
+  border-left: 1px dotted #000;
+}
+
+.textarea {
+  height: 20em;
+}
+
+.success-message-2 {
+  background-color: #fff;
+}
+
+.text-block-7 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+}
+
+.heading-8 {
+  border-style: solid none none;
+  border-width: 1px;
+  border-color: #000 #000 #3f3f3f;
+  font-family: Lato, sans-serif;
+  font-size: 24px;
+}
+
+.form-3 {
+  border-bottom: 1px solid #3f3f3f;
+}
+
+.image-9 {
+  margin-bottom: 2em;
+  border: 1px solid #000;
 }
 
 html.w-mod-js *[data-ix="fade-in-on-load"] {
