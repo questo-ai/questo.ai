@@ -123,7 +123,10 @@
     <div class="container-4 w-container">
       <div class="text-block-6"><strong class="bold-text-7">Sign up now to receive your beta!</strong></div>
       <div class="form-block w-clearfix w-form">
-        <form id="email-form" name="email-form" data-name="Email Form" class="form-2 w-clearfix"><input type="email" class="text-field-2 w-input" maxlength="256" name="email-3" data-name="Email 3" placeholder="Enter your email" id="email-3" required=""><input type="submit" value="GET EARLY ACCESS" data-wait="Please wait..." class="submit-button-2 w-button"></form>
+        <form id="email-form" name="email-form" data-name="Email Form" class="form-2 w-clearfix" 
+        		onsubmit="ga('send', 'event', 'Sign Up', 'submit', 'Beta Signup'); return false;">
+        	<input type="email" class="text-field-2 w-input" maxlength="256" name="email-3" data-name="Email 3" placeholder="Enter your email" id="email-3" required=""><input type="submit" value="GET EARLY ACCESS" data-wait="Please wait..." class="submit-button-2 w-button">
+        </form>
         <div class="w-form-done">
           <div>Thank you! Your submission has been received!</div>
         </div>
