@@ -143,6 +143,17 @@ a, a:hover {
                           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-93175931-1', 'auto');
   ga('send', 'pageview');
+  $(window).scroll(function() {     
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+        $(".navigation").addClass("active");
+		console.log('ss')
+    }
+    else {
+        $(".navigation").removeClass("active");
+    }
+});
+});
 </script>
 </body>
 </html>
