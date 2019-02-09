@@ -22,13 +22,36 @@
   <meta name="google-site-verification" content="AG8QWnwpGsUujz0jcF-nBcACQ1GpaIVLWZL9T4jaV7k">
 </head>
 <body>
-  <div data-collapse="medium" data-animation="default" data-duration="400" class="navigation w-nav">
+     <div data-collapse="medium" data-animation="default" data-duration="400" class="navigation w-nav">
     <div class="w-container"><a href="index.html" class="brand-link w-clearfix w-nav-brand"><img src="images/logo.png" width="60" height="60" srcset="images/logo-p-500.png 500w, images/logo.png 2000w" sizes="60px" class="image-3"><div class="text-block-2">Questo AI</div></a>
-      <nav role="navigation" class="nav-menu w-nav-menu"><a href="mailto:team@getquesto.com?subject=%5BPress%20Inquiry%5D%20Subject" class="nav-link w-nav-link">Press</a><a href="careers.html" class="nav-link w-nav-link">Careers</a><a href="about.html" class="nav-link w-nav-link">About</a><a href="#email-2" class="nav-link w-nav-link"><strong class="bold-text-5">Sign Up</strong></a></nav>
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <a href="careers.html" class="nav-link w-nav-link">Careers</a>
+        <a href="about.html" class="nav-link w-nav-link">About</a>
+      </nav>
       <div class="nav-link menu w-nav-button">
         <div class="w-icon-nav-menu"></div>
       </div>
     </div>
+  </div>
+  <div data-animation="slide" data-duration="500" data-infinite="1" class="slider w-slider">
+    <div class="w-slider-mask">
+      <div class="slide _1 w-slide">
+        <div class="w-container"></div>
+      </div>
+      <div class="slide _2 w-slide">
+        <div class="w-container"></div>
+      </div>
+      <div class="slide _3 w-slide">
+        <div class="w-container"></div>
+      </div>
+    </div>
+    <div class="w-slider-arrow-left">
+      <div class="w-icon-slider-left"></div>
+    </div>
+    <div class="w-slider-arrow-right">
+      <div class="w-icon-slider-right"></div>
+    </div>
+    <div class="w-slider-nav w-round"></div>
   </div>
   <div id="features" class="about-section">
     <div class="container w-container">
@@ -37,18 +60,25 @@
       <p class="paragraph-8">We strongly believe that there is a huge amount of work to be done to improve the education industry. There are inefficiencies which could be addressed with technology and not enough is being done to do so. We founded Questo with the goal to make learning a more enjoyable and accessible experience for students around the world.</p>
       <h2 class="heading-7">Our Team</h2>
       <div class="small-features-row w-row">
-        <div class="column-4 w-col w-col-6">
-          <div class="div-block person-about-bloc"><img src="images/taichi.jpg" class="image-4">
+        <div class="column-4 w-col w-col-4">
+          <div class="card">
+            <div class="crop"><img src="images/taichi.jpg" class="image-4"></div>
             <h3 class="heading">Taichi Kato</h3>
             <h4 class="job-title">Co Founder</h4>
-            <a class="paragraph">taichikato.com</a>
           </div>
         </div>
-        <div class="column-5 w-col w-col-6">
-          <div class="div-block person-about-bloc"><img src="images/arya.jpg" class="image-4">
+        <div class="column-5 w-col w-col-4">
+          <div class="card">
+            <div class="crop"><img src="images/arya.jpg" class="image-4"></div>
             <h3 class="heading">Arya Vohra</h3>
             <h4 class="job-title">Co Founder</h4>
-            <a class="paragraph">aryavohra.com</a>
+          </div>
+        </div>
+        <div class="column-5 w-col w-col-4">
+          <div class="card">
+            <div class="crop"><img src="images/khush.jpg" class="image-4"></div>
+            <h3 class="heading">Khush Jammu</h3>
+            <h4 class="job-title">Co Founder</h4>
           </div>
         </div>
       </div><a href="careers.html" class="button-5 w-button">Join us! We&#x27;re hiring</a></div>
@@ -66,14 +96,6 @@
         </div>
         <style type="text/css">
 	@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
-	ul {
-  	padding: 0;
-  }
-a, a:hover {
-	color: #000;
-	text-decoration: none;
-	padding: 5px;
-}
 .socialbtnsbtnsbtns, .socialbtnsbtnsbtns ul, .socialbtnsbtnsbtns li {
 	margin: 0;
 	padding: 5px;
