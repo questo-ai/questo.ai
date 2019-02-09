@@ -431,7 +431,9 @@ p {
   margin-bottom: 12px;
   background-color: #dbdbdb;
 }
-
+.active {
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, .13);
+}
 .additional-contact {
   margin-top: 21px;
   text-align: center;
