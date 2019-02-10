@@ -46,7 +46,6 @@ Webflow.require('ix').init([
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
         $(".navigation").addClass("active");
-		console.log('ss')
     }
     else {
         $(".navigation").removeClass("active");
