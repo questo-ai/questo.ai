@@ -430,7 +430,7 @@ p{
     background-color:#fff;
     font-family:Lato,sans-serif;
     color:#858585;
-    background:linear-gradient(90deg,#fff 20px,transparent 1%) center,linear-gradient(#fff 20px,transparent 1%) center,#3882e8;
+    background:linear-gradient(90deg,#fff 20px,transparent 1%) center,linear-gradient(#fff 20px,transparent 1%) center, rgba(56, 130, 232, 0.3);
     background-size:22px 22px
 }
 @keyframes fadein{
