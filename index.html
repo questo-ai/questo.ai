@@ -86,6 +86,45 @@
             </div>
         </div>
     </div>
+    <div id="demo" class="section white-section">
+        <div class="container-2" id="demo-container">
+            <h2 class="heading-3">Try it out.</h2>
+            <textarea
+                type="text"
+                id="qg-input"
+                class="text-box"
+                placeholder="Pop in a document on anything you'd like to study."
+                maxlength="1000"></textarea>
+            <button class="button-5" class="submit-button" onclick="generate()">Let's go!</button>
+            <div id="question-list" class="card-list"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function generate(){
+            var text = document.getElementById("qg-input").value;
+            if (text != "") {
+                $.post({
+                    url: 'http://api.questo.ai:5000/generate/text',
+                    contentType: 'application/json',
+                    dataType: "json",
+                    crossDomain: true,
+                    data: JSON.stringify({"text": text,"beta": "false"}),
+                    success: function(data){
+                        var questions_divs = "";
+                        $.each(data['quiz'], function(id, question) {
+                            questions_divs += '<div class="flashcard"><div class="question">'+question['question']+'</div><div class="answer">'+question['answer']+'</div></div><br>';
+                        })
+                        document.getElementById("question-list").innerHTML = questions_divs;
+                    },
+                    error: function(){
+                        $('warning-text').text("Network error.")
+                    }
+                })
+            } else {
+                $('warning-text').text("You need to enter some text.")
+            }
+        }
+    </script>
     <!-- <div class="section-3">
     <div class="container-3 w-container">
       <div class="text-block-5 wow-block"><strong class="bold-text-6 wow-title">Trusted by the students of top schools in Asia</strong></div>

@@ -149,7 +149,7 @@ p{
 .section.white-section{
     border-top-style:solid;
     background-color:#fff
-}
+}x
 .slider{
     display:none;
     height:360px;
@@ -360,6 +360,39 @@ p{
     margin-bottom:0;
     padding-top:auto;
     padding-bottom:auto
+}
+.text-box{
+    box-shadow:0 0 6px 0 #cecece;
+    border: 2px solid #5d5d5d;
+    color: #6d6d6d;
+    border-radius: 0.5em;
+    height: 200px;
+    width: 600px;
+    padding-top: 1em;
+    padding-left: 1em;
+    vertical-align: text-top;
+    line-height: 1em;
+    resize: none;
+}
+.text-box:focus {
+    outline: none;
+}
+.card-list: {
+    text-align: center;
+}
+.flashcard{
+    display: inline-block;
+    box-shadow: 0 0 6px 0 #cecece;
+    border: 2px solid #5d5d5d;
+    border-radius: 0.5em;
+    height: 200px;
+    width: 350px;
+}
+.question{
+
+}
+.answer{
+
 }
 .paragraph-4{
     font-style:normal
