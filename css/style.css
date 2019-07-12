@@ -1,20 +1,32 @@
 * {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+p {
+	color: #6d6d6d;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 1.4em;
+}
+
 .container {
 	text-align: center;
 }
+
 .container.header {
-	height: 30rem;
+	height: 35em;
 }
+
 .container.nav {
-	height: 100px;
+	height: 3em;
 }
+
 .nav-link {
 	color: #C5C5C5;
 	text-decoration: none;
 	margin: 4px;
 }
+
 #nav-left {
 	display: inline-block;
 	vertical-align: middle;
@@ -22,44 +34,60 @@
 	margin-left: 0;
 	width: 40%;
 }
+
 #nav-right {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: right;
 	width: 30%;
 }
+
 .container.left {
 	text-align: left;
 	display: inline-block;
+	vertical-align: middle;
+	/*vertical-align: center;*/
 	margin-left: 0;
 	width: 40%;
 }
+
 .container.right {
 	display: inline-block;
 	margin-right: 0;
 	vertical-align: middle;
-	text-align: right;
-	width: 30%;
+	text-align: center;
+	width: 40%;
 }
+
+#header-left {
+	width: 30em;
+}
+
 .container.app-buttons {
 	display: inline-block;
 	/*height: 40px;*/
 }
+
 .app-button {
 	height: 40px;
 }
+
 .header-title {
-	font-size: 2.5em;
+	font-size: 2em;
 	font-weight: 700;
+	margin: 0;
 }
+
 .header-subtitle {
-	font-size: 1em;
-	font-weight: 400;
-	color: #5A5A5A;
+	font-size: 1.125em;
+	font-weight: 300;
+	color: #737373;
 }
+
 .image {
 
 }
+
 .image.undraggable {
 	user-drag: none; 
 	user-select: none;
@@ -68,35 +96,106 @@
 	-webkit-user-select: none;
 	-ms-user-select: none;
 }
+
+.flashcard {
+	display: inline-block;
+	padding: 0.5em;
+	width: 10em;
+	height: 10em;
+	color: #FFFFFF;
+	font-weight: 700;
+	margin: 0.5em;
+	margin-top: 0;
+	margin-right: 0;
+	vertical-align: top;
+	text-align: middle;
+	border-radius: 0.25em;
+	background-color: #9e21ff;
+	background-image: linear-gradient(135deg, #ed21ff 0%, #9e21ff 100%, #9e21ff 100%);
+}
+
 .container.demo {
 	padding: 10px;
 	background-color: #FAFAFA;
-	height: 30em;
+	height: 35em;
 }
+
 #qg-input-box {
     box-shadow:0 0 6px 0 #cecece;
     border: 2px solid #FAFAFA;
     color: #6d6d6d;
     font-size: 1em;
     border-radius: 0.5em;
-    height: 15em;
-    width: 100%;
+    height: 20em;
+    width: 90%;
     padding-top: 1em;
     padding-left: 1em;
     vertical-align: text-top;
     line-height: 1em;
     resize: none;
 }
+
 #qg-input-box:focus {
     outline: none;
 }
+
+#submit-button {
+	background-color: #ed21ff;
+	border-radius: 1em;
+	color: #FFFFFF;
+	padding: 0.75em;
+	margin-top: 1em;
+	font-size: 16px;
+}
+
+#question-list {
+	text-align: left;
+	height: 20em;
+	vertical-align: top;
+	-webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+	   -khtml-user-select: none; /* Konqueror HTML */
+	     -moz-user-select: none; /* Firefox */
+	      -ms-user-select: none; /* Internet Explorer/Edge */
+	          user-select: none; /* Non-prefixed version, currently
+	                                supported by Chrome and Opera */
+}
+
 #text-input {
 	display: block;
-	width: 50em;
 	margin: auto;
 }
+
+#demobox-left {
+	display: inline-block;
+	text-align: left;
+	margin-left: 0;
+	width: 40%;
+}
+
+#demobox-right {
+	display: inline-block;
+	text-align: right;
+	margin-right: 0;
+	width: 50%;
+}
+
 #demo-warning {
 	padding-top: 1em;
 	color: #C5C5C5;
-	text-align: right;
+	margin-right: 0;
+}
+
+.container.features {
+	padding: 10px;
+	height: 20em;
+}
+
+.feature {
+	display: inline-block;
+	vertical-align: top;
+	text-align: middle;
+	height: 10em;
+	width: 20em; 
+	margin-right: 3em; 
 }

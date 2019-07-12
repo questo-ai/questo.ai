@@ -56,31 +56,92 @@
     </div>
     <div class="container header">
         <div class="container left">
-            <h1 class="header-title">Generate quizzes in a snap.</h1>
-            <p class="header-subtitle">Simply snap a pic of your textbook and we'll give you test questions.</p>
-            <div class="container app-buttons">
-                <a href="https://itunes.apple.com/us/app/questo-ai-quiz-generator/id1183390727?mt=8"><img src="https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2017-11-10&kind=iossoftware&bubble=ios_apps" class="app-button"/></a>
-                <a href="https://www.producthunt.com/posts/questo?utm_source=badge-featured"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=144827&theme=light" alt="Questo - Generate quizzes in a snap! 🔥 | Product Hunt Embed" class="app-button"/></a>
+            <div id="header-left">
+                <h1 class="header-title">Generate quizzes in a snap.</h1>
+                <p class="header-subtitle">Give us a document you want to study and we'll make questions for you. We help you learn efficiently.</p>
+                <div class="container app-buttons">
+                    <a href="https://itunes.apple.com/us/app/questo-ai-quiz-generator/id1183390727?mt=8"><img src="https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2017-11-10&kind=iossoftware&bubble=ios_apps" class="app-button"/></a>
+                    <a href="https://www.producthunt.com/posts/questo?utm_source=badge-featured"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=144827&theme=light" alt="Questo - Generate quizzes in a snap! 🔥 | Product Hunt Embed" class="app-button"/></a>
+                </div>
             </div>
         </div>
-        <div class="container right"><img src="images/flashcardscreen.png" class="image undraggable" style="width:250px;margin:0;"></div>
-        <!-- <div class="container right"><img src="images/homecamera.png" alt="questo demo screenshot" srcset="images/homecamera-p-500.png 500w, images/homecamera.png 800w" sizes="(max-width: 479px) 80vw, (max-width: 767px) 50vw, 302px" class="image undraggable"></div> -->
+        <div id="header-left" class="container right"><img src="images/flashcardscreen.png" class="image undraggable" style="width:250px;margin:0;"></div>
     </div>
     <div id="demo" class="container demo">
-        <h1 class="header-title">Try it out</h1>
-        <div id="text-input">
-            <textarea
-                type="text"
-                id="qg-input-box"
-                placeholder="Pop in a document on anything you'd like to study."
-                maxlength="1500"
-                onKeyUp="check_count(this)"></textarea>
-            <div id="demo-warning"></div>
+        <h1 class="section-title">Try it out</h1>
+        <div class="container left">
+            <div id="text-input">
+                <textarea
+                    type="text"
+                    id="qg-input-box"
+                    placeholder="Pop in a document on anything you'd like to study."
+                    maxlength="1500"
+                    onKeyUp="check_count(this)"></textarea>
+            </div>
+            <div id="demobox-left">
+                <button id="submit-button" onclick="generate()">Let's go!</button>
+            </div>
+            <div id="demobox-right">
+                <div id="demo-warning">0 / 1500</div>
+            </div>
         </div>
-        <button class="submit-button" onclick="generate()">Let's go!</button>
-        <div id="question-list" class="card-list"></div>
+        <div id="question-list" class="container right undraggable">
+            <div
+                class="flashcard"
+                onclick="switch_qa(this)"
+                data-question="When was the Sinai invaded by Israel?"
+                data-answer="Nineteen-fifty-go-fuck-yourself"
+                data-showing="question"
+                data-tilt>When was the Sinai invaded by Israel?</div>
+            <div
+                class="flashcard"
+                onclick="switch_qa(this)"
+                data-question="The aims were to regain Western control of the Suez Canal and to remove ________________ who had just nationalized the canal."
+                data-answer="Egyptian President Gamal Abdel Nasser"
+                data-showing="question"
+                data-tilt>The aims were to regain Western control of the Suez Canal and to remove ________________ who had just nationalized the canal.</div>
+            <div
+                class="flashcard"
+                onclick="switch_qa(this)"
+                data-question="When was the Sinai invaded by Israel?"
+                data-answer="Nineteen-fifty-go-fuck-yourself"
+                data-showing="question"
+                data-tilt>When was the Sinai invaded by Israel?</div>
+            <div
+                class="flashcard"
+                onclick="switch_qa(this)"
+                data-question="When was the Sinai invaded by Israel?"
+                data-answer="Nineteen-fifty-go-fuck-yourself"
+                data-showing="question"
+                data-tilt>When was the Sinai invaded by Israel?</div>   
+        </div>
+    </div>
+    <div id="features" class="container features">
+        <div class="feature">
+            <h2>Question generation</h2>
+            <p>We make questions that test you on your knowledge of the facts and concepts in the text. It's fast, simple, and great when studying for tests.</p>
+        </div>
+        <div class="feature">
+            <h2>Text / Photo input</h2>
+            <p>Paste in educational text to get comprehensive and accurate questions. If you're in a pinch, you can snap a pic of a textbook, and we'll make questions from that.</p>
+        </div>
+        <div class="feature">
+            <h2>Easy revision with SRS</h2>
+            <p>We help you focus on questions you're struggling with so you can build a better understanding of the text. We remind you study tough material more often.</p>
+        </div>
     </div>
     <script type="text/javascript">
+        function switch_qa(obj) {
+            var showing = obj.getAttribute('data-showing');
+            if (showing === 'question') {
+                obj.innerHTML = obj.getAttribute('data-answer');
+                obj.setAttribute('data-showing', 'answer');
+            } else {
+                obj.innerHTML = obj.getAttribute('data-question');
+                obj.setAttribute('data-showing', 'question');
+            }
+        }
+
         function check_count(obj) {
             var character_count = obj.value.length;
             const max_length = obj.maxLength;
@@ -102,11 +163,16 @@
                     crossDomain: true,
                     data: JSON.stringify({"text": text,"beta": "false"}),
                     success: function(data){
-                        var questions_divs = "";
-                        $.each(data['quiz'], function(id, question) {
-                            questions_divs += '<div class="flashcard"><div class="question">'+question['question']+'</div><div class="answer">'+question['answer']+'</div></div><br>';
+                        var $questions = [];
+                        $.each(data['quiz'], function(id, qa) {
+                            question_div = document.createElement(
+                                '<div class="flashcard" onclick="switch_qa(this)">'+qa['question']+'</div>');
+                            question_div.setAttribute('data-question', qa['question']);
+                            question_div.setAttribute('data-answer', qa['answer']);
+                            question_div.setAttribute('data-showing', 'question');
+                            questions.push(question_div);
                         })
-                        document.getElementById("question-list").innerHTML = questions_divs;
+                        $("#question-list").append($questions);
                     },
                     error: function(){
                         warning.innerHTML = "Network error.";
@@ -117,8 +183,10 @@
             }
         }
     </script>
-    <!-- 
-    <div class="section section-6">
+    <div class="container">
+        illustrations by <a href="https://icons8.com/ouch">Ouch.pics</a> <br>This AI powered quiz generation app was created by <a href="http://taichikato.com" target="_blank" class="footer-link">Taichi</a>, <a href="http://aryavohra.com" class="footer-link">Arya</a> and <a href="https://www.linkedin.com/in/khush-jammu-1aa422132/" class="footer-link">Khush</a>. <br>Copyright ©2019 Questo AI. All rights reserved.
+    </div>
+    <!-- <div class="section section-6">
         <h2 class="heading-3">Download Now</h2>
         <div class="section-subtitle" style="margin: 1em;">Awarded 1st place by IBM at Singapore's <a href="https://fintechfestival.sg/">FinTech Festival 2016</a> 🏆 </div>
         <div class="text-block-4"><a href="https://itunes.apple.com/us/app/questo-ai-quiz-generator/id1183390727?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2017-11-10&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a></div>
@@ -126,8 +194,6 @@
     <div class="section footer">
         <div class="text-block-3"> illustrations by <a href="https://icons8.com/ouch">Ouch.pics</a> <br>This AI powered quiz generation app was created by <a href="http://taichikato.com" target="_blank" class="footer-link">Taichi</a>, <a href="http://aryavohra.com" class="footer-link">Arya</a> and <a href="https://www.linkedin.com/in/khush-jammu-1aa422132/" class="footer-link">Khush</a>. <br>Copyright ©2019 Questo AI. All rights reserved.</div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" intergrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/webflow.js" type="text/javascript"></script>
     <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -142,7 +208,9 @@
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-93175931-1', 'auto');
         ga('send', 'pageview');
-    </script>
+    </script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" intergrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/tilt.jquery.min.js" type="text/javascript"></script>
 </body>
 
 </html>
