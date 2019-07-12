@@ -1,0 +1,102 @@
+* {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.container {
+	text-align: center;
+}
+.container.header {
+	height: 30rem;
+}
+.container.nav {
+	height: 100px;
+}
+.nav-link {
+	color: #C5C5C5;
+	text-decoration: none;
+	margin: 4px;
+}
+#nav-left {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	margin-left: 0;
+	width: 40%;
+}
+#nav-right {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+	width: 30%;
+}
+.container.left {
+	text-align: left;
+	display: inline-block;
+	margin-left: 0;
+	width: 40%;
+}
+.container.right {
+	display: inline-block;
+	margin-right: 0;
+	vertical-align: middle;
+	text-align: right;
+	width: 30%;
+}
+.container.app-buttons {
+	display: inline-block;
+	/*height: 40px;*/
+}
+.app-button {
+	height: 40px;
+}
+.header-title {
+	font-size: 2.5em;
+	font-weight: 700;
+}
+.header-subtitle {
+	font-size: 1em;
+	font-weight: 400;
+	color: #5A5A5A;
+}
+.image {
+
+}
+.image.undraggable {
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.container.demo {
+	padding: 10px;
+	background-color: #FAFAFA;
+	height: 30em;
+}
+#qg-input-box {
+    box-shadow:0 0 6px 0 #cecece;
+    border: 2px solid #FAFAFA;
+    color: #6d6d6d;
+    font-size: 1em;
+    border-radius: 0.5em;
+    height: 15em;
+    width: 100%;
+    padding-top: 1em;
+    padding-left: 1em;
+    vertical-align: text-top;
+    line-height: 1em;
+    resize: none;
+}
+#qg-input-box:focus {
+    outline: none;
+}
+#text-input {
+	display: block;
+	width: 50em;
+	margin: auto;
+}
+#demo-warning {
+	padding-top: 1em;
+	color: #C5C5C5;
+	text-align: right;
+}
