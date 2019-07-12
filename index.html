@@ -136,9 +136,11 @@
             if (showing === 'question') {
                 obj.innerHTML = obj.getAttribute('data-answer');
                 obj.setAttribute('data-showing', 'answer');
+                obj.style.backgroundImage = 'linear-gradient(225deg, #ed21ff 0%, #9e21ff 100%, #9e21ff 100%)';
             } else {
                 obj.innerHTML = obj.getAttribute('data-question');
                 obj.setAttribute('data-showing', 'question');
+                obj.style.backgroundImage = 'linear-gradient(135deg, #ed21ff 0%, #9e21ff 100%, #9e21ff 100%)';
             }
         }
 
