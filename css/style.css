@@ -1,24 +1,33 @@
 * {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-
+body {
+	margin: 0;
+}
 p {
 	color: #6d6d6d;
 	font-size: 16px;
 	font-weight: 200;
 	line-height: 1.4em;
+    max-width: 767px;
 }
 
-.container {
-	text-align: center;
-}
+a {
+	text-decoration: none;
+	color: #333;
+	font-weight: 600;
 
-.container.header {
-	height: 35em;
 }
+#nav {
+	height: 6em;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0em 3em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
 
-.container.nav {
-	height: 3em;
 }
 
 .nav-link {
@@ -26,46 +35,45 @@ p {
 	text-decoration: none;
 	margin: 4px;
 }
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0em 3em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+}
+#header {
+	min-height: 500px;
+}
 
 #nav-left {
 	display: inline-block;
-	vertical-align: middle;
-	text-align: left;
-	margin-left: 0;
-	width: 40%;
 }
 
 #nav-right {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: right;
-	width: 30%;
 }
 
-.container.left {
-	text-align: left;
-	display: inline-block;
-	vertical-align: middle;
-	/*vertical-align: center;*/
-	margin-left: 0;
-	width: 40%;
+#logo {
+	height: 2em;
+}
+.left {
+    text-align: left;
+    display: inline-block;
+    flex-basis: 60%;
+    margin: 2em 0;
 }
 
-.container.right {
+.right {
 	display: inline-block;
 	margin-right: 0;
+	width: 40%;
 	vertical-align: middle;
 	text-align: center;
-	width: 40%;
-}
-
-#header-left {
-	width: 30em;
-}
-
-.container.app-buttons {
-	display: inline-block;
-	/*height: 40px;*/
 }
 
 .app-button {
@@ -73,19 +81,21 @@ p {
 }
 
 .header-title {
-	font-size: 2em;
+	font-size: 2.5em;
 	font-weight: 700;
 	margin: 0;
+	max-width: 500px;
 }
 
 .header-subtitle {
 	font-size: 1.125em;
 	font-weight: 300;
 	color: #737373;
+	max-width: 500px;
 }
 
 .image.tilt {
-	transform: rotate(8deg);
+	transform: rotate(5deg);
 }
 
 .image.undraggable {
@@ -101,22 +111,19 @@ p {
 	padding: 0.75em;
 	width: 15em;
 	height: 10em;
-	color: #FFFFFF;
+	color: #333;
 	font-weight: 600;
 	font-size: 0.9em;
 	vertical-align: top;
 	border-radius: 0.25em;
-	background-color: #9e21ff;
 	box-shadow: 0 0 10px 0 #cecece;
-	background-image: linear-gradient(135deg, #ed21ff 0%, #9e21ff 100%, #9e21ff 100%);
 	overflow: hidden;
 	text-overflow: ellipsis;
+	cursor: pointer;
 }
 
-.container.demo {
-	padding: 10px;
+.demo {
 	background-color: #FAFAFA;
-	height: 35em;
 }
 
 #qg-input-box {
@@ -148,6 +155,7 @@ p {
 	font-size: 16px;
 	font-weight: 700;
     transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 #submit-button:focus {
@@ -161,7 +169,6 @@ p {
 
 #question-list {
 	text-align: left;
-	width: 35em;
 	vertical-align: top;
 	/*-webkit-touch-callout: none; /* iOS Safari */
 	  /*-webkit-user-select: none; /* Safari */
@@ -178,7 +185,15 @@ p {
 	padding: 4em;
 	/*background: white;*/
 }
-
+.section-title {
+	width: 100%;
+	padding: 1em 0 0.5em;
+    margin: 0;
+	text-align: center;
+}
+#textbox-container {
+	margin: 2em;
+}
 #text-input {
 	display: block;
 	margin: auto;
@@ -203,31 +218,49 @@ p {
 	color: #C5C5C5;
 	margin-right: 0;
 }
-
-.container.features {
+#features {
 	padding: 5em;
-	height: 30em;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .feature {
 	display: inline-block;
 	vertical-align: top;
-	text-align: middle;
-	height: 10em;
-	width: 20em; 
-	margin-right: 3em; 
+	text-align: center;
+	margin: 1em; 
+	flex-basis: 30%;
 }
-
-.slick-prev {
+.slick-next:before, .slick-prev:before {
 	color: #9e21ff;
 }
 
 .feature-image {
-	height: 10em;
+	height: 12em;
 }
 
-.container.footer {
+.footer {
 	padding: 10px;
-	height: 5em;
-	margin-bottom: 5em;
+	text-align: center;
+}
+@media screen and (min-width: 767px) {
+  #header {
+    flex-direction: row;
+    height: 80vh
+  }
+}
+@media screen and (max-width: 767px) {
+  .item {
+  	width: 100%;
+  	flex-basis: 100%
+  }
+  #header-right {
+  	 overflow: hidden;
+  	 height: 20em;
+  }
+  .container {
+  	flex-direction: column;
+  	margin: 0;
+  	padding: 0em 3em;
+  }
 }
