@@ -134,8 +134,7 @@ a {
     border-radius: 0.5em;
     height: 20em;
     width: 90%;
-    padding-top: 1em;
-    padding-left: 1em;
+    padding: 1em;
     vertical-align: text-top;
     line-height: 1em;
     resize: none;
