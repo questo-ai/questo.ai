@@ -18,19 +18,22 @@
     <meta name="copyright" content="© 2019 Questo AI" />
     <meta name="robots" content="All" />
     <meta content="Webflow" name="generator">
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/webflow.css" rel="stylesheet" type="text/css">
-    <link href="css/questo.webflow.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" intergrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script type="text/javascript">
         WebFont.load({
             google: {
-                families: ["Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic", "Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic", "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Arbutus Slab:regular"]
+                families: ["Calibre:300,300italic,400,400italic,500,500italic,700,700italic", "Helvetica Neue:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic", "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Arbutus Slab:regular"]
             }
         });
     </script>
     <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-    <script type="text/javascript">
+    <script type="text/javascript">  
         ! function(o, c) {
             var n = c.documentElement,
                 t = " w-mod-";
@@ -43,125 +46,152 @@
 </head>
 
 <body class="body">
-    <div data-collapse="medium" data-animation="default" data-duration="400" class="navigation w-nav">
-        <div class="w-container"><a href="index.html" class="brand-link w-clearfix w-nav-brand"><img src="images/logo.png" width="60" height="60" srcset="images/logo-p-500.png 500w, images/logo.png 2000w" sizes="60px" class="image-3"><div class="text-block-2">Questo AI</div></a>
-            <nav role="navigation" class="nav-menu w-nav-menu">
-                <a href="about.html" class="nav-link w-nav-link">About</a>
+    <div class="container" id="nav">
+        <div id="nav-left">
+            <a href="index.html"><img src="images/logo-w-text.png" height="60" class="image undraggable" id="logo"></a>
+        </div>
+        <div id="nav-right">
+            <nav role="navigation">
+                <a href="#features" class="nav-link">features</a>
+                <a href="#about" class="nav-link">about</a>
             </nav>
-            <div class="nav-link menu w-nav-button">
-                <div class="w-icon-nav-menu"></div>
-            </div>
         </div>
     </div>
-    <div data-animation="slide" data-duration="500" data-infinite="1" class="slider w-slider">
-        <div class="w-slider-mask">
-            <div class="slide _1 w-slide">
-                <div class="w-container"></div>
-            </div>
-            <div class="slide _2 w-slide">
-                <div class="w-container"></div>
-            </div>
-            <div class="slide _3 w-slide">
-                <div class="w-container"></div>
-            </div>
-        </div>
-        <div class="w-slider-arrow-left">
-            <div class="w-icon-slider-left"></div>
-        </div>
-        <div class="w-slider-arrow-right">
-            <div class="w-icon-slider-right"></div>
-        </div>
-        <div class="w-slider-nav w-round"></div>
-    </div>
-    <div id="top" class="section main">
-        <div class="w-container">
-            <div class="w-row">
-                <div class="column w-col w-col-7">
-                    <div class="beta-mark">BETA</div>
-                    <h1 class="main-heading">Generate quizzes in a snap!</h1>
-                    <p class="main-subtitle">Simply snap a pic of your textbook and we'll give you test questions.</p>
-                    <div class="text-block-4"><a href="https://itunes.apple.com/us/app/questo-ai-quiz-generator/id1183390727?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2017-11-10&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a><a href="https://www.producthunt.com/posts/questo?utm_source=badge-featured" target="_blank" style="height: 40px;     width: 135px;     display: inline-grid;     margin: 0px 20px;"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=144827&theme=light" alt="Questo - Generate quizzes in a snap! 🔥 | Product Hunt Embed" style="width:135px;height:40px;" width="135px" height="40px" /></a></div>
-                </div>
-                <div class="column-2 w-col w-col-5"><img src="images/homecamera.png" width="302" alt="questo demo screenshot" srcset="images/homecamera-p-500.png 500w, images/homecamera.png 800w" sizes="(max-width: 479px) 80vw, (max-width: 767px) 50vw, 302px" class="image-2"></div>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="section-3">
-    <div class="container-3 w-container">
-      <div class="text-block-5 wow-block"><strong class="bold-text-6 wow-title">Trusted by the students of top schools in Asia</strong></div>
-      <div class="row w-row">
-        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-tiny-stack"><img src="images/school_uwcsea.png" width="369" alt="uwcsea logo" srcset="images/school_uwcsea-p-500.png 500w, images/school_uwcsea.png 738w" sizes="(max-width: 479px) 62vw, (max-width: 767px) 23vw, (max-width: 991px) 122.65625px, 193.328125px"></div>
-        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-tiny-stack"><img src="images/school_nus.png" alt="nus logo" srcset="images/school_nus-p-500.png 500w, images/school_nus.png 738w" sizes="(max-width: 479px) 62vw, (max-width: 767px) 23vw, (max-width: 991px) 122.65625px, 193.328125px"></div>
-        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-tiny-stack"><img src="images/school_tanglin.png" alt="tanglin logo" srcset="images/school_tanglin-p-500.png 500w, images/school_tanglin.png 738w" sizes="(max-width: 479px) 62vw, (max-width: 767px) 23vw, (max-width: 991px) 122.65625px, 193.328125px"></div>
-      </div>
-    </div>
-  </div> -->
-    <div id="features" class="section white-section">
-        <div class="w-container">
-            <h2 class="heading-3">It&#x27;s the quickest, most focused way to revise</h2>
-            <div class="section-subtitle">You can easily master topics by simply <strong>scanning</strong> your textbook</div>
-            <div class="feature-row w-row">
-                <div class="w-col w-col-6">
-                    <div class="card">
-                        <img src="pablo/pablo-searching.png" data-ix="fade-in-on-scroll" width="178" alt="Questo document upload screenshot" class="feature-image">
-                        <h3 class="feature-heading">All it takes is a snap.</h3>
-                        <p class="paragraph-5">Questo generates <strong class="bold-text-3">specific quizzes</strong> based on the material you give. Study whenever you want with the flexibility and independence you deserve.</p>
-                    </div>
-                </div>
-                <div class="w-col w-col-6">
-                    <div class="card">
-                        <img src="pablo/pablo-come-back-later.png" data-ix="fade-in-on-scroll" width="178" alt="Questo document upload screenshot" class="feature-image">
-                        <h3 class="feature-heading">Have no time to prep? Don't worry.</h3>
-                        <p class="paragraph-5">In only <strong class="bold-text-3">15 seconds</strong> you can test your understanding and identify knowledge gaps, better preparing you for your exams.</p>
-                    </div>
+    <div class="container content" id="header">
+        <div class="left item">
+            <div id="header-left">
+                <h1 class="header-title">Generate quizzes in a snap.</h1>
+                <p class="header-subtitle">Give us a document you want to study and we'll make questions for you. We help you learn efficiently.</p>
+                <div class="app-buttons">
+                    <a href="https://itunes.apple.com/us/app/questo-ai-quiz-generator/id1183390727?mt=8"><img src="https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2017-11-10&kind=iossoftware&bubble=ios_apps" class="app-button"/></a>
+                    <a href="https://www.producthunt.com/posts/questo?utm_source=badge-featured"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=144827&theme=light" alt="Questo - Generate quizzes in a snap! 🔥 | Product Hunt Embed" class="app-button"/></a>
                 </div>
             </div>
-            <div class="feature-row w-row">
-                <div class="w-col w-col-6">
-                    <div class="card">
-                        <img src="pablo/pablo-payment-processed.png" data-ix="fade-in-on-scroll" width="178" alt="Questo document upload screenshot" class="feature-image">
-                        <h3 class="feature-heading">Want questions from an online text? Sweet.</h3>
-                        <p class="paragraph-5">Paste your text into the app, we'll give you questions <strong class="bold-text-3">as fast as possible.</strong></p>
-                    </div>
-                </div>
-                <div class="w-col w-col-6">
-                    <div class="card">
-                        <img src="pablo/pablo-downloading.png" data-ix="fade-in-on-scroll" width="178" alt="Questo document upload screenshot" class="feature-image">
-                        <h3 class="feature-heading">World history test next week? We got you!</h3>
-                        <p class="paragraph-5">Questo works great on humanities texts like <strong class="bold-text-3">history, economics, sociology etc.</strong></p>
-                    </div>
-                </div>
-            <div>
+        </div>
+        <div class="right item" id="header-right">
+            <img src="images/flashcardscreen.png" class="image undraggable tilt" style="width:15em;margin:0;overflow: hidden;">
         </div>
     </div>
+    <div class="demo">
+        <h1 class="section-title">Try it out</h1>
+        <div id="demo" class="container">
+            <div class="left item" id="textbox-container">
+                <div id="text-input">
+                    <textarea
+                        type="text"
+                        id="qg-input-box"
+                        placeholder="Pop in a document on anything you'd like to study."
+                        maxlength="1500"
+                        onKeyUp="check_count(this)"></textarea>
+                </div>
+                <div id="demobox-left">
+                    <div id="demo-warning">0 / 1500</div>
+                </div>
+                <div id="demobox-right">
+                    <button id="submit-button" onclick="generate()">Let's go!</button>
+                </div>
+            </div>
+            <div id="question-list" class="right item undraggable">
+                <div
+                    class="flashcard"
+                    onclick="switch_qa(this)"
+                    data-question="Until when was the Suez Canal closed?"
+                    data-answer="March 1957"
+                    data-showing="question"
+                    data-tilt>Until when was the Suez Canal closed?</div>
+                <div
+                    class="flashcard"
+                    onclick="switch_qa(this)"
+                    data-question="When did Britain and France land paratroopers along the Suez Canal?"
+                    data-answer="5 November"
+                    data-showing="question"
+                    data-tilt>When did Britain and France land paratroopers along the Suez Canal?</div>
+            </div>
+        </div>
     </div>
-    <div class="section section-6">
-        <h2 class="heading-3">Download Now</h2>
-        <div class=" beta-bottom">BETA</div>
+    <div id="features" class="container ">
+        <div class="feature">
+            <img src="images/features/input.png" class="feature-image">
+            <h2>Text and Photo Input</h2>
+            <p>Paste in educational text to get comprehensive and accurate questions. If you're in a pinch, you can snap a pic of a textbook, and we'll make questions from that.</p>
+        </div>
+        <div class="feature">
+            <img src="images/features/master.png" class="feature-image">
+            <h2>Question generation</h2>
+            <p>We make questions that test you on your knowledge of the facts and concepts in the text. It's fast, simple, and great when studying for tests.</p>
+        </div>
+        <div class="feature">
+            <img src="images/features/srs.png" class="feature-image">
+            <h2>AI-Powered Revision Scheduling</h2>
+            <p>We help you focus on questions you're struggling with so you can build a better understanding of the text. We remind you study tough material more often.</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function switch_qa(obj) {
+            var showing = obj.getAttribute('data-showing');
+            if (showing === 'question') {
+                obj.innerHTML = obj.getAttribute('data-answer');
+                obj.setAttribute('data-showing', 'answer');
+            } else {
+                obj.innerHTML = obj.getAttribute('data-question');
+                obj.setAttribute('data-showing', 'question');
+            }
+        }
 
-        <div class="section-subtitle" style="margin: 1em;">Awarded 1st place by IBM at Singapore's <a href="https://fintechfestival.sg/">FinTech Festival 2016</a> 🏆 </div>
-        <div class="text-block-4"><a href="https://itunes.apple.com/us/app/questo-ai-quiz-generator/id1183390727?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2017-11-10&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a></div>
-    </div>
-    <div class="section footer">
-        <div class="text-block-3"> illustrations by <a href="https://icons8.com/ouch">Ouch.pics</a> <br>This AI powered quiz generation app was created by <a href="http://taichikato.com" target="_blank" class="footer-link">Taichi</a>, <a href="http://aryavohra.com" class="footer-link">Arya</a> and <a href="https://www.linkedin.com/in/khush-jammu-1aa422132/" class="footer-link">Khush</a>. <br>Copyright ©2019 Questo AI. All rights reserved.</div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" intergrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/webflow.js" type="text/javascript"></script>
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-93175931-1', 'auto');
-        ga('send', 'pageview');
+        function check_count(obj) {
+            var character_count = obj.value.length;
+            const max_length = obj.maxLength;
+            var warning = document.getElementById("demo-warning");
+            warning.innerHTML = character_count+' / '+max_length;
+            if (character_count == max_length) {
+               warning.style.color = 'red';
+            }
+        }
+
+        function generate() {
+            var warning = document.getElementById("demo-warning");
+            var text = document.getElementById("qg-input-box").value;
+            if (text != "") {
+                console.log(text);
+                $.post({
+                    url: 'http://api.questo.ai:5000/generate/text',
+                    contentType: 'application/json',
+                    dataType: "json",
+                    crossDomain: true,
+                    data: JSON.stringify({"text":text,"beta":"false","subject":'Demo',"title":'Demo'}),
+                    success: function(data){
+                        $('#question-list').slick('removeSlide', null, null, true);
+                        $('#question-list').slick('destroy');
+                        $('#question-list').slick({'dots': true});
+                        $.each(data['quiz'], function(id, qa) {
+                            const class_name = 'flashcard';
+                            const onclick = 'switch_qa(this)';
+                            const question = qa['short_gap'];
+                            const answer = qa['answer'];
+                            const showing = 'question';
+                            $('#question-list').slick('slickAdd', `<div><div class=${class_name} onclick=${onclick} data-question="${question}" data-showing=${showing} data-answer="${answer}">${question}</div></div>`);
+                        })
+                        $('.flashcard').tilt();
+                    },
+                    error: function(){
+                        warning.innerHTML = "Network error.";
+                    }
+                })
+            } else {
+                warning.innerHTML = "You need to enter some text.";
+            }
+        }
+
+        $('#question-list').slick({
+            dots: true
+        });
+
     </script>
+
+    <div class="footer">
+        <p style="font-weight: 400; margin: 0 auto;font-size: 0.8em;color: #ABABAB;">©2019 Questo AI<br><a href="http://taichikato.com" target="_blank" class="footer-link">Taichi</a>, <a href="http://aryavohra.com" class="footer-link">Arya</a> and <a href="https://www.linkedin.com/in/khush-jammu-1aa422132/" class="footer-link">Khush</a></p>
+    </div>
+    <script src="js/tilt.jquery.min.js" type="text/javascript"></script>
 </body>
 
 </html>
