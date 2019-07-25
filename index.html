@@ -155,11 +155,11 @@
             if (text != "") {
                 console.log(text);
                 $.post({
-                    url: 'http://35.247.187.22:5000/generate/text',
+                    url: 'http://api.questo.ai:5000/generate/text',
                     contentType: 'application/json',
                     dataType: "json",
                     crossDomain: true,
-                    data: JSON.stringify({"text":text,"beta":"false"}),
+                    data: JSON.stringify({"text":text,"beta":"false","subject":'Demo',"title":'Demo'}),
                     success: function(data){
                         var questions = '';
                         $.each(data['quiz'], function(id, qa) {

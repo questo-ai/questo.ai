@@ -16,32 +16,32 @@ class App extends React.Component {
 		this.state = {'repos': ['aryavohra/questo-backend', 'taixhi/questo-ios'], 'showList': false};
 	}
 
-	getIssues(token) {
-		var repoIssues = [];
-		for (var i in this.state.repos) {
-			var issues = [];
-			$.ajax({
-				type: "GET",
-				url: `https://api.github.com/repos/${this.state.repos[i]}/issues`,
-				dataType: 'json',
-				headers: {
-					"Authorization": "token " + token
-				},
-				success: function (data){
-					issues.push(data);
-				}
-			});
-			repoIssues.push({'repo': this.state.repos[i], 'issues':issues})
-		}
-		this.setState({'repoIssues': repoIssues});
-		this.setState({'showList': true});
-	}
+	// getIssues(token) {
+	// 	var repoIssues = [];
+	// 	for (var i in this.state.repos) {
+	// 		var issues = [];
+	// 		$.ajax({
+	// 			type: "GET",
+	// 			url: `https://api.github.com/repos/${this.state.repos[i]}/issues`,
+	// 			dataType: 'json',
+	// 			headers: {
+	// 				"Authorization": "token " + token
+	// 			},
+	// 			success: function (data){
+	// 				issues.push(data);
+	// 			}
+	// 		});
+	// 		repoIssues.push({'repo': this.state.repos[i], 'issues':issues})
+	// 	}
+	// 	this.setState({'repoIssues': repoIssues});
+	// 	this.setState({'showList': true});
+	// }
 
-	getToken = (response) => {
-		$.getJSON('http://localhost:9999/authenticate/'+response.code, function(data) {
-			this.getIssues(data.token);
-		}.bind(this));
-	}
+	// getToken = (response) => {
+	// 	$.getJSON('http://localhost:9999/authenticate/'+response.code, function(data) {
+	// 		// this.getIssues(data.token);
+	// 	}.bind(this));
+	// }
 
 	render() {
 		return(
