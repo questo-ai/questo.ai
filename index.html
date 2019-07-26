@@ -17,7 +17,6 @@
     <meta name="language" content="EN" />
     <meta name="copyright" content="© 2019 Questo AI" />
     <meta name="robots" content="All" />
-    <meta content="Webflow" name="generator">
     <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/> -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -173,8 +172,12 @@
                         $('#question-list').slick({'dots': true});
                         $.each(data['quiz'], function(id, qa) {
                             const class_name = 'flashcard';
-                            const onclick = 'switch_qa(this)';
-                            const question = qa['short_gap'];
+                            const onclick = 'switch_qa(this)';    
+                            if (qa['short_gap'] !== 'undefined') {
+                                const question = qa['short_gap'];
+                            } else {
+                                const question = qa['question'];
+                            }
                             const answer = qa['answer'];
                             const showing = 'question';
                             $('#question-list').slick('slickAdd', `<div><div class=${class_name} onclick=${onclick} data-question="${question}" data-showing=${showing} data-answer="${answer}">${question}</div></div>`);
