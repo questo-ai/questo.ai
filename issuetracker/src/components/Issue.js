@@ -1,21 +1,34 @@
 import React from 'React'
 import styled from "styled-components"
+import TimeAgo from 'timeago-react';
 
 const Wrapper = styled.div`
-	border-radius: 2px;
-	-webkit-box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);
-	-moz-box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);
-	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.3);
-	margin: 1em;
+	border-bottom: 1px solid #e1e4e8;
+	padding: 0.5em;
+`
+
+const aNoDeco = styled.a`
+	text-decoration: none;
+`
+
+const Row = styled.div`
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
 `
 
 const Title = styled.h2`
 	font-size: 1em;
-	margin: 0.5em;
+	font-weight: 600;
+	text-align: left;
+	margin-right: 0.5em;
 `
 
-const Number = styled.p`
+const IssueNumber = styled.p`
 	font-color: #333333;
+	font-size: 0.75em;
+	margin: 0;
 `
 
 class Issue extends React.Component {
@@ -26,11 +39,17 @@ class Issue extends React.Component {
 	
 	render() {
 		return(
-			<Wrapper>
-				<Title>{this.props.issue.title}</Title>
-				<Number>{this.props.issue.number}</Number>
-				
-			</Wrapper>
+			<aNoDeco href={this.props.issue.url}><Wrapper>
+				<Row>
+					<Title>{this.props.issue.title}</Title>
+					{this.props.issue.labels.map(function(label, i) {
+						return <p key={i} style={{"background-color": `#${label.color}`, "color": "white", "border-radius": "2px", "font-size": "1em"}}>{label.name}</p>
+					})}
+				</Row>
+				<Row>
+					<IssueNumber>#{this.props.issue.number} opened <TimeAgo datetime={this.props.issue.created_at}/> by {this.props.issue.user.login}</IssueNumber>
+				</Row>
+			</Wrapper></aNoDeco>
 		)
 	}
 }

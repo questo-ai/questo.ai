@@ -6,7 +6,7 @@ const Row = styled.div`
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	width: 60%;
+	width: 90%;
 `
 
 const Column = styled.div`
@@ -14,6 +14,10 @@ const Column = styled.div`
 	flex-direction: column;
 	flex-basis: 100%;
 	flex: 1;
+	margin: 1em;
+	-webkit-box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);
+	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.3);
 `
 
 class RepoLists extends React.Component {

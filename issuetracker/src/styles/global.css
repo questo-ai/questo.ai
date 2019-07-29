@@ -7,24 +7,13 @@ body {
 
 h1 {
 	font-size: 5em;
+	margin-bottom: 0;
 }
 
-.githubButton {
+.githubLogin {
+	font-size: 0.9em;
+	color: #333;
+	font-weight: 600;
 	text-align: center;
-    font-size: 1em;
-    color: #000;
-    background-color: transparent;
-    border-color: #fff;
-    border-color: rgba(255,255,255,0.5);
-    transition: all .1s ease-in-out;
-}
-
-.gitLogo {
-	height: 1em;
-	width: 1em;
-	align-self: center;
-}
-
-.githubButton.gitLink {
-
+	border: none;
 }

@@ -18,7 +18,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-github-login": "^1.0.3",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "timeago-react": "^2.0.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
