@@ -150,9 +150,9 @@ a {
 }
 
 #submit-button {
-	border: 2px solid #bd21ff;
+	border: 2px solid #e823d8;
 	border-radius: 1em;
-	color: #bd21ff;
+	color: #e823d8;
 	background-color: #FAFAFA;
 	padding: 0.75em;
 	margin-top: 1em;
@@ -168,7 +168,7 @@ a {
 
 #submit-button:hover {
 	color: #FFFFFF;
-	background-color: #bd21ff;
+	background-color: #e823d8;
 }
 
 #question-list {
@@ -236,7 +236,7 @@ a {
 	flex-basis: 30%;
 }
 .slick-next:before, .slick-prev:before {
-	color: #9e21ff;
+	color: #e823d8;
 }
 
 .feature-image {
