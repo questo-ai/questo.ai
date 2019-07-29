@@ -29,6 +29,11 @@ a {
 	flex-direction: row;
 
 }
+.app-buttons {
+	display: flex;
+	align-items: left;
+	flex-direction: row;
+}
 
 .nav-link {
 	color: #C5C5C5;
