@@ -1,7 +1,4 @@
-var plugins = [{
-      plugin: require('/Users/aryavohra/newprojects/questo.ai/issuetracker/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
-      options: {"plugins":[]},
-    }]
+var plugins = []
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {

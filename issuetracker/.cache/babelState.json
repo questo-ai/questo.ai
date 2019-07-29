@@ -1,16 +1,7 @@
 {
   "stages": {
     "develop": {
-      "plugins": [
-        {
-          "name": "babel-plugin-styled-components",
-          "stage": "develop",
-          "options": {
-            "plugins": [],
-            "ssr": false
-          }
-        }
-      ],
+      "plugins": [],
       "presets": [],
       "options": {
         "cacheDirectory": true,
@@ -18,16 +9,7 @@
       }
     },
     "develop-html": {
-      "plugins": [
-        {
-          "name": "babel-plugin-styled-components",
-          "stage": "develop-html",
-          "options": {
-            "plugins": [],
-            "ssr": false
-          }
-        }
-      ],
+      "plugins": [],
       "presets": [],
       "options": {
         "cacheDirectory": true,
@@ -35,16 +17,7 @@
       }
     },
     "build-html": {
-      "plugins": [
-        {
-          "name": "babel-plugin-styled-components",
-          "stage": "build-html",
-          "options": {
-            "plugins": [],
-            "ssr": true
-          }
-        }
-      ],
+      "plugins": [],
       "presets": [],
       "options": {
         "cacheDirectory": true,
@@ -52,16 +25,7 @@
       }
     },
     "build-javascript": {
-      "plugins": [
-        {
-          "name": "babel-plugin-styled-components",
-          "stage": "build-javascript",
-          "options": {
-            "plugins": [],
-            "ssr": true
-          }
-        }
-      ],
+      "plugins": [],
       "presets": [],
       "options": {
         "cacheDirectory": true,
